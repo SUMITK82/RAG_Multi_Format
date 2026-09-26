@@ -96,7 +96,9 @@ With the virtual environment activated:
 streamlit run app.py
 ```
 
-Open the local URL printed by Streamlit, select a provider and model, upload files, and click **Ingest & Index**. You can inspect the normalized JSON for each uploaded file, then ask questions. The app shows the retrieved passages alongside the answer.
+Once Streamlit is running, open **[http://localhost:8501](http://localhost:8501)** on the same computer. This local link is clickable from the repository README, but it only works while the app is running on your computer; GitHub cannot start a process on your machine.
+
+Select a provider and model, upload files, and click **Ingest & Index**. You can inspect the normalized JSON for each uploaded file, then ask questions. The app shows the retrieved passages alongside the answer.
 
 The uploaded files and FAISS index are held in the current Streamlit session; the app does not persist the index between sessions.
 
