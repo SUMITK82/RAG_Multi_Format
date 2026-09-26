@@ -1,5 +1,7 @@
 # Multi-Format RAG
 
+[![Deploy to Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?repository=SUMITK82/RAG_Multi_Format&branch=main&mainModule=app.py)
+
 Turn documents in different formats into one searchable knowledge base, then ask questions and get answers grounded in the source material.
 
 This project demonstrates the complete retrieval-augmented generation (RAG) flow: file parsing, a shared document representation, structure-aware chunking, local vector search, and cited answers from a selectable language model.
@@ -63,6 +65,12 @@ rag-multi-format/
 
 The first indexing run downloads the local embedding model, which may take a little time and disk space.
 
+## Deploy a public demo
+
+Click **Deploy to Streamlit** at the top of this README and sign in to Streamlit Community Cloud. Select this repository, the `main` branch, and `app.py` as the main file, then deploy. Once it finishes, Streamlit provides a public `*.streamlit.app` URL. Add that URL to the repository's **About → Website** field to give visitors a direct link to the running app. The deploy button starts the deployment flow; it is not itself a live app URL.
+
+The app accepts the selected provider's API key in its sidebar, so you do not need to commit credentials or add them to GitHub. The public app uses its hosting account's resources; avoid uploading confidential documents.
+
 ## Setup on Windows
 
 Run these commands from the project root in PowerShell:
@@ -88,7 +96,7 @@ If PowerShell blocks virtual-environment activation, either allow scripts for th
 .\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
-## Start the app
+## Start the app locally
 
 With the virtual environment activated:
 
