@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What is the total revenue reported for Q3?",
+    "expected_source": "financials.csv"
+  },
+  {
+    "question": "What is the company's refund policy?",
+    "expected_source": "policy.pdf"
+  },
+  {
+    "question": "Who is the primary contact listed in the contract?",
+    "expected_source": "contract.docx"
+  }
+]
